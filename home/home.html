@@ -1,384 +1,77 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aidan Kelly</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <meta name="description" content="Personal website showcasing university experience and projects.">
-    <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="../assets/icon.ico">
-</head>
-
-<body>
-    <div class="container">
-        <header class="header">
-            <a href="javascript:location.reload(true)">
-                <h1 class="title">AK</h1>
-            </a>
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href='#About' class="nav-link">01.<span>About</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href='#Projects' class="nav-link">02.<span>Projects</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href='#Education' class="nav-link">03.<span>Education</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../assets/cv/Aidan Kelly CV - Computer Sci.pdf" class="nav-link resume"> CV </a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
-        <div class="hamburger-overlay"></div>
-        <div class="content">
-            <section id="Intro">
-                <!-- Intro content goes here -->
-                <div class="intro-content">
-                    <div>
-                        <p class="content-small-monospace">Hi, my name is</p>
-                    </div>
-                    <div>
-                        <h2 class="content-large"><strong>Aidan Kelly</strong></h2>
-                    </div>
-                    <div>
-                        <h3 class="content-medium">Computer Science Student</h3>
-                    </div>
-                    <div>
-                        <p class="content-small">
-                            Passionate about exploring new technologies and building new things.</p>
-                    </div>
-                </div>
-                <div class="arrow-wrapper">
-                    <div class="arrow arrow-first"></div>
-                    <div class="arrow arrow-second"></div>
-                </div>
-            </section>
-            <section id="About" class="section">
-                <!-- About content goes here -->
-                <div class="about-me">
-                    <div class="title-content-wrapper">
-                        <p class="content-small-monospace">01.&nbsp;</p>
-                        <h2 class="content-medium">About Me</h2>
-                    </div>
-                    <div class="main-content-wrapper">
-                        <div class="about-text">
-                            <p class="content-small"><strong>Hello! My name is Aidan, currently a 3rd year student at
-                                    the
-                                    University of Liverpool</strong>. My passion for technology started at a young age.
-                                Growing up I
-                                experimented with making
-                                addons and mods for games and tinkering with CSS on early social media sites, which
-                                fuelled my interest in tech even more.
-                            </p>
-                            <p class="content-small"><strong>Now pursuing a degree in Computer Science</strong>, I'm
-                                building on the
-                                foundations
-                                of my knowledge and exploring other areas of the field. This
-                                website serves as a project starting point for me to dive deeper into web development
-                                and explore different techniques, frameworks, and libraries.</p>
-                            <p class="content-small">Here are a few technologies I've used recently:</p>
-                            <ul class="tech-list">
-                                <li>
-                                    <i class="fab fa-cuttlefish"></i> C &amp; C++
-                                </li>
-                                <li>
-                                    <i class="fab fa-windows"></i> C#
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-swift"></i> Swift
-                                </li>
-                                <li>
-                                    <i class="fab fa-php"></i> PHP
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-square-js"></i> Javascript
-                                </li>
-                                <li>
-                                    <i class="fab fa-html5"></i> HTML &amp; CSS
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="about-image">
-                            <div class="polaroid">
-                                <img src="../assets/about/me.jpg" alt="Me" />
-                            </div>
-                            <div class="polaroid">
-                                <img src="../assets/about/uni.jpeg" alt="University of Liverpool" />
-                            </div>
-                            <div class="polaroid">
-                                <img src="../assets/about/me-climb.png" alt="Me Climbing" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="Projects" class="section">
-                <!-- Projects content goes here -->
-                <div class="project-content">
-                    <div class="title-content-wrapper">
-                        <p class="content-small-monospace">02.&nbsp;</p>
-                        <h2 class="content-medium">Projects</h2>
-                    </div>
-                    <div class="main-content-wrapper">
-                        <div class="project-list">
-                            <ul>
-                                <li class="project-item" data-project="four-six">
-                                    <p class="content-small"><i class="fa-brands fa-swift"></i> Four Six</p>
-                                </li>
-                                <li class="project-item" data-project="personal-website">
-                                    <p class="content-small"><i class="fa-brands fa-square-js"></i> Personal Website</p>
-                                </li>
-                                <li class="project-item" data-project="visneti">
-                                    <p class="content-small"><i class="fab fa-php"></i> Visneti</p>
-                                </li>
-                                <li class="project-item" data-project="marble-br">
-                                    <p class="content-small"><i class="fa-solid fa-network-wired"></i> Marble Battle Royale</p>
-                                </li>
-                                <li class="project-item" data-project="more-projects">
-                                    <p class="content-small"><i class="fa-solid fa-code"></i> And more...</p>
-                                </li>
-                            </ul>
-                            <div class="selection-indicator"></div>
-                        </div>
-                        <div class="project-view">
-                            <div id="no-selection" class="project-info">
-                                <div class="project-description">
-                                    <p class="content-small">Throughout University and in my own time I've tackled
-                                        multiple software projects. Select one from the list to see more
-                                        information!</p>
-                                </div>
-                                <div class="project-images">
-                                    <div class="noproj-images"><img src="../assets/projects/noproj/intellij.png"
-                                            alt="Intellij"></div>
-                                    <div class="noproj-images"><img src="../assets/projects/noproj/vsc.png"
-                                            alt="VSCode"></div>
-                                    <div class="noproj-images"><img src="../assets/projects/noproj/xcode.png"
-                                            alt="Xcode"></div>
-                                </div>
-                            </div>
-                            <div id="four-six" class="project-info">
-                                <div class="project-title">
-                                    <h2 class="content-medium"><i class="fa-brands fa-swift@"></i> Four Six</h2>
-                                </div>
-                                <div class="project-description">
-                                    <p class="content-small">An iOS application for timing and calculating ratios when 
-                                        brewing pourover coffee. Built with SwiftUI in Xcode with responsive interactions 
-                                        and a well designed GUI. <a href="https://apps.apple.com/gb/app/four-six/id6468425955">
-                                        Published to the App Store.</a></p>
-                                    </div>
-                                    <div class="project-images">
-                                        <div class="foursix-images"><img src="../assets/projects/foursix/foursix1.png"
-                                                alt="Four Six"></div>
-                                        <div class="foursix-images"><img src="../assets/projects/foursix/foursix2.png"
-                                                alt="Four Six"></div>
-                                        <div class="foursix-images"><img src="../assets/projects/foursix/foursix3.png"
-                                                alt="Four Six"></div>
-                                        </div>
-                                    </div>
-                            <div id="personal-website" class="project-info">
-                                <div class="project-title">
-                                    <h2 class="content-medium"><i class="fa-brands fa-square-js"></i> Personal Website
-                                    </h2>
-                                </div>
-                                <div class="project-description">
-                                    <p class="content-small">The website you're currently on! A personal project to
-                                        learn more about web development. Built from scratch by hand in VSCode with
-                                        HTML,
-                                        CSS, and Javascript. <a href="https://github.com/Ade131/Ade131.github.io">Hosted
-                                            with Github Pages.</a></p>
-                                </div>
-                                <div class="project-images">
-                                    <div class="website-images"><img src="../assets/projects/personalsite/vsc.png"
-                                            alt="VSCode"></div>
-                                    <div class="website-images"><img src="../assets/projects/personalsite/github.png"
-                                            alt="Github"></div>
-                                    <div class="website-images"><img src="../assets/projects/personalsite/inspect.png"
-                                            alt="Inspect"></div>
-                                </div>
-                            </div>
-                            <div id="visneti" class="project-info">
-                                <div class="project-title">
-                                    <h2 class="content-medium"><i class="fab fa-php"></i> Visneti</h2>
-                                </div>
-                                <div class="project-description">
-                                    <p class="content-small">Build as part of a collaborative team over 3 months, Visneti is a
-                                        mobile
-                                        focused website developed
-                                        for exploring local night-out venues in Liverpool. It uses a
-                                        client-server
-                                        architecture, with an HTML/CSS frontend and a PHP/SQL backend.</p>
-                                </div>
-                                <div class="project-images">
-                                    <div class="visneti-images"><img src="../assets/projects/visneti/visneti1.png"
-                                            alt="Visneti"></div>
-                                    <div class="visneti-images"><img src="../assets/projects/visneti/visneti2.png"
-                                            alt="Visneti"></div>
-                                    <div class="visneti-images"><img src="../assets/projects/visneti/visneti3.png"
-                                            alt="Visneti"></div>
-                                </div>
-                            </div>
-                            <div id="marble-br" class="project-info">
-                                <div class="project-title">
-                                    <h2 class="content-medium"><i class="fa-solid fa-network-wired"></i> Marble Battle Royale
-                                    </h2>
-                                </div>
-                                <div class="project-description">
-                                    <p class="content-small">Marble Battle Royale is a 3D Online multiplayer game build with C# in Unity.
-                                                            Featuring realistic physics collisions and real time multiplayer networking.
-                                                            The game was developed over 6 months as part of my final year project.
-                                    </p>
-                                </div>
-                                <div class="project-images">
-                                    <div class="mbr-images"><img src="../assets/projects/marblebr/marblebrcode.png"
-                                            alt="Marble Battle Royale Game"></div>
-                                    <div class="mbr-images"><img src="../assets/projects/marblebr/marblebrmap.png"
-                                            alt="Marble Battle Royale Game"></div>
-                                </div>
-                            </div>
-                            <div id="more-projects" class="project-info">
-                                <div class="project-title">
-                                    <h2 class="content-medium"><i class="fa-solid fa-code"></i> And more...</h2>
-                                </div>
-                                <div class="project-description">
-                                    <p class="content-small">Multiple smaller projects, including:<br><br>
-                                        - Simulated printing press built in Java applying object-oriented design
-                                        principles.<br><br>
-                                        - Java programs with thorough JUnit testing and test builds using Apache Ant.<br><br>
-                                        - Line drawing program built in C# using Visual Studio GUI elements.
-                                </div>
-                                <div class="project-images">
-                                    <div class="moreproj-images"><img src="../assets/projects/other/ant.png"
-                                            alt="Apache ANT File"></div>
-                                    <div class="moreproj-images"><img src="../assets/projects/other/intellij.png"
-                                            alt="IntelliJ Java File"></div>
-                                    <div class="moreproj-images"><img src="../assets/projects/other/lines.png"
-                                            alt="C# Visual Studio File"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="Education" class="section">
-                <!-- Education content goes here -->
-                <div class="education-content">
-                    <div class="title-content-wrapper">
-                        <p class="content-small-monospace">03.&nbsp;</p>
-                        <h2 class="content-medium">Education</h2>
-                    </div>
-                    <div class="main-content-wrapper">
-                        <div class="education-box">
-                            <div class="left-box">
-                                <div class="image-wrapper">
-                                    <img src="../assets/education/Logo.png">
-                                </div>
-                                <div class="text-wrapper">
-                                    <p class="content-small">University of Liverpool</p>
-                                    <p class="content-small">Computer Science Bsc (Hons)</p>
-                                    <p class="content-small">2021-2024</p>
-                                </div>
-                            </div>
-                            <div class="right-box">
-                                <div class="tabs">
-                                    <div class="tab">
-                                        <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-                                        <label for="tab-1" class="tab-label content-small">Year 1</label>
-                                        <div class="tab-content">
-                                            <div class="text">
-                                                <p class="content-small">During my first year, I gained a solid base of
-                                                    Computer Science skills, including:</p>
-                                                <ul class="content-small">
-                                                    <li>Establishing a <b>solid mathematical foundation</b> to build
-                                                        upon.</li>
-                                                    <li>Gaining proficiency in approaching <b>complex algorithmic problems.</b>
-                                                    </li>
-                                                    <li>Studying low-level languages and hardware, including coding in
-                                                        Assembly.</li>
-                                                    <li>Acquiring hands-on experience in <b>Object-Oriented design with
-                                                            Java</b>.</li>
-                                                    <li>Strengthening my understanding of <b>data structures &
-                                                            algorithms</b>, enhancing my problem-solving abilities.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab">
-                                        <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-                                        <label for="tab-2" class="tab-label content-small">Year 2</label>
-                                        <div class="tab-content">
-                                            <div class="text">
-                                                <p class="content-small">In my second year, I enhanced my
-                                                    <b>problem-solving and maths skills</b> as well as focusing on some
-                                                    optional topics:</p>
-                                                <ul class="content-small">
-                                                    <li>Hands-on with managing large amounts of data using <b>mySQL
-                                                            databases and SQL scripts</b>.</li>
-                                                    <li>Gained practical development and teamwork experience with the
-                                                        <b>group software project</b>.</li>
-                                                    <li>Explored software development tools such as ANT and JUnit.</li>
-                                                    <li>Expanded programming skills through App Development and Advanced
-                                                        C Languages.</li>
-                                                    <li>Gained experience in web development using languages like
-                                                        <b>Javascript and PHP</b>.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab">
-                                        <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-                                        <label for="tab-3" class="tab-label content-small">Year 3</label>
-                                        <div class="tab-content">
-                                            <div class="text">
-                                                <p class="content-small">In my upcoming third year, I will delve into
-                                                    more complex Computer Science topics:</p>
-                                                <ul class="content-small">
-                                                    <li>Biocomputation, using the biology of neurons to develop and research <b>neural networks.</b></li>
-                                                    <li>Gaining hands-on experience building computer vision
-                                                        applications.</li>
-                                                    <li>Deepening my understanding of <b>advanced software
-                                                            engineering</b>.</li>
-                                                    <li>Studying modules on <b>semantic web and cloud computing</b> to
-                                                        enhance skills in web-based knowledge representation and
-                                                        development.</li>
-                                                    <li>Tackling a <b>final year software project</b>, creating a battle royal multiplayer game 
-                                                        in Unity with networking and physics.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="socials">
-            <a href="../assets/cv/Aidan Kelly CV - Computer Sci.pdf"><i class="fa-regular fa-file-lines"></i></a>
-            <a href="https://github.com/Ade131"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/aidan-kelly-034298226/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/ade_131/"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="email">
-            <a href="mailto: aidankelly202@gmail.com">aidankelly202@gmail.com</a>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <a href="https://github.com/Ade131/Ade131.github.io">Built by Aidan Kelly</a>
-        </div>
-    </footer>
-    <script src="home.js"></script>
+    <link rel="stylesheet" href="home.css" />
     <script src="https://kit.fontawesome.com/c95ea42ee0.js" crossorigin="anonymous"></script>
-</body>
+  </head>
 
+  <body>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+
+    <main class="page">
+      <section class="card">
+        <header class="hero">
+          <h1>Aidan Kelly</h1>
+          <p class="subtitle">Software Developer</p>
+
+          <nav class="links" aria-label="Social links">
+            <a href="https://ade131.github.io/assets/cv/Aidan%20Kelly%20CV%20-%20Computer%20Sci.pdf" target="_blank">
+              <i class="fa-regular fa-file-lines"></i>
+            </a>
+
+            <a href="https://github.com/Ade131" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aidan-k-034298226/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/ade_131/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="mailto:aidankelly202@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </nav>
+        </header>
+
+        <section class="experience">
+          <h2>Experience</h2>
+
+          <article class="job">
+            <h3>Bet365</h3>
+
+            <div class="job-role">
+              <p class="role">Software Developer</p>
+              <p class="dates">April 2025 - Present</p>
+            </div>
+
+            <div class="job-role">
+              <p class="role">Junior Software Developer</p>
+              <p class="dates">July 2024 - April 2025</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="education">
+          <h2>Education</h2>
+
+          <article class="job">
+            <h3>University of Liverpool</h3>
+            <p class="role">BSc Computer Science</p>
+            <p class="dates">2020 - 2024</p>
+            <p class="grade">First Class Honours</p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <a href="/2024/2024.html" class="old-site">View 2024 site →</a>
+    <script src="home.js"></script>
+  </body>
 </html>
